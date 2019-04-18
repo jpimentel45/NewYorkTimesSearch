@@ -1,0 +1,14 @@
+.jumbotron {
+    text-align: center;
+    border-style: none;
+    background-color: midnightblue;
+    color: whitesmoke;
+}
+
+form {
+    padding: 10px 20px 20px 20px; 
+}
+
+#searchResults {
+    margin-top: 20px;
+}
