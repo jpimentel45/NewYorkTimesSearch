@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <form id="form">
+            <span class="d-block p-2 bg-dark text-white">Search Parameters</span>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Search Term:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Number of Records to Retrieve:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">End Year (Optional):</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="p-2 bd-highlight" id="search-button">Search</div>
+                <div class="p-2 bd-highlight">Clear Results</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+
+        <form>
+            <span class="d-block p-2 bg-dark text-white">Search Parameters</span>
+        </form>
+        <hr>
+    </div>
+    <p class="text-center">Made with lots of love &hearts;.</p>
+
+
+    <script type="text/javascript">
+       //Begin creating basic click events. Register the submit button
+        var form = $("#form");
+
+        $("search-button").on("click", function () {
+            form.submit();
+        });
+
+        
+
+      </script>
+</body>
+
+</html>
